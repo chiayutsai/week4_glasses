@@ -1,0 +1,35 @@
+.nav{
+    padding: 0px 88px;
+    @include pc-1024{
+        padding: 0 40px;
+    }
+    @include phone-576{
+       padding: 0;
+       .logo{
+           padding: 10px 0;
+       }
+     }
+}
+.navbar a{
+    position: relative;
+    color:#fff;
+    font-size: 20px;
+    padding: 40px 0 40px 64px;
+    
+    @include link-hover{
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    }
+    @include pc-1024{
+        padding-left: 40px;
+       
+    }
+    @include pad-650{
+        padding-left: 20px;
+       
+    }
+    @include phone-576{
+       padding: 8px 0;
+       text-align: center;
+       border:$light-border;
+    }
+}

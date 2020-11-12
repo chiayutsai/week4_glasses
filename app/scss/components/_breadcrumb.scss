@@ -1,0 +1,31 @@
+.breadcrumbs{
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    @include pc-1024{
+        margin-bottom: 8px;
+    }
+}
+
+.breadcrumbs__item:not(:last-child){
+    .breadcrumbs__link::after {
+        content: '/';
+        margin: 0 5px;
+    }
+}
+
+
+.breadcrumbs__item{
+    
+    &:last-child{
+        .breadcrumbs__link{
+            color:$primary-color;
+        }
+
+    }
+    .breadcrumbs__link{
+        @include pc-1024{
+            font-size: 14px;
+        }
+    }
+}

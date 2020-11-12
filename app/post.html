@@ -1,0 +1,107 @@
+---
+title: 部落格
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="blog__nav bg-secondary ">
+    <div class="container d-flex justify-between">
+        <ul class="d-flex w-sm-100 justify-sm-between">
+            <li>
+                <a class="text-white text-xl font-bold text-md-base text-center" href="">最新消息</a>
+            </li>
+            <li>
+                <a class="text-white text-xl font-bold text-md-base text-center" href="">特別企劃</a>
+            </li>
+            <li>
+                <a class="text-white text-xl font-bold text-md-base text-center" href="">新品上市</a>
+            </li>
+            <li>
+                <a class="text-white text-xl font-bold text-md-base text-center" href="">鏡框小知識</a>
+            </li>
+        </ul>
+        <a class="d-sm-none" href=""><img src="images/icon-search.svg" alt="搜尋文章"></a>
+    </div>
+</div>
+<div class="container">
+    <ul class="breadcrumbs ">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">首頁</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">部落格</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">特別企劃</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">情人特別企劃</a></li>
+    </ul>
+    <div class="post-item d-flex flex-sm-column">
+        <div class="post-item__content mr-3">
+            <ul class="post-item__tag d-flex">
+                <li><a class="text-2xl font-roboto text-primary font-bold text-md-base text-sm-sm" href="">#special</a>
+                </li>
+                <li class="ml-1 ml-md-1 ml-sm-1"><a
+                        class="text-2xl font-roboto text-primary font-bold  text-md-base text-sm-sm" href="">#event</a>
+                </li>
+            </ul>
+            <h1 class="text-6xl text-md-4xl text-sm-lg mb-gap mb-md-0 text-sm-secondary">情人特別企劃</h1>
+            <div class="d-flex d-flex-between-center mb-3 mb-md-2 mb-sm-4">
+                <p class="post-item__entitle text-md-base  font-medium text-sm-sm">2020 Valentine’s Special</p>
+                <p class="post-item__date text-md-sm font-medium">2020/02/14</p>
+            </div>
+            <div class="post-item__img mb-3 mb-md-2"><img src="images/blog-9.png" alt="post"> </div>
+            <p class="post-item__text text-xl text-md-base mb-md-3">一年一度西洋情人節即將到來，<br>我們推出最強「情人節企劃」，
+                <br>為這個甜蜜的節日加溫。<br>本次拍攝的鏡框款式與 NEEDS
+                CLASSIC
+                聯名設計款，偶爾跟另一半來個低調情侶單品，<br>結合彼此喜好、找出合適框型款式，<br>在這個春夏<br>輕鬆搭出屬於你們的甜蜜默契！</p>
+            <div class="post-item__img mb-3 mb-md-2"><img src="images/blog-6.png" alt="post"> </div>
+            <p class="post-item__text text-xl text-md-base mb-md-3">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與
+                NEEDS CLASSIC
+                聯名設計款，偶爾跟另一半來個低調情侶單品，
+                結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+            <div class="post-item__img mb-3 mb-md-2"><img src="images/blog-7.png" alt="post"></div>
+            <p class="post-item__text text-xl text-md-base mb-md-3"> 一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。
+                本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品， 結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+            <div class="post-item__img mb-3 mb-md-2"><img src="images/blog-10.jpg" alt="post"> </div>
+            <p class="post-item__text--last text-xl text-md-base mb-md-4 mb-sm-6">2/14(五)-2/20(日)<br>至本店單筆消費滿2980元,
+                就送情人節限定眼鏡盒1個<br>期間優惠還有~~持他牌鏡框更換鏡片<br>薄型非球面鏡片折300元<br>濾藍光鏡片折500元<br><br>快快帶上另一半<br>
+                讓彼此每一次睜開眼，都被愛的視線包圍!</p>
+            <div class="share d-flex mb-1">
+                <p class='text-xl font-bold font-roboto text-md-base'>Share</p>
+                <ul class="d-flex">
+                    <li><a href=""><img src="images/logo-facebook.svg" alt="fb"></a></li>
+                    <li><a href=""><img src="images/logo-instagram.svg" alt="ig"></a></li>
+                </ul>
+            </div>
+
+            <ul class="post__control d-flex d-flex-between-center mb-13 mb-md-0 flex-sm-column align-sm-start mb-sm-8">
+                <li class="mb-sm-1"><a class="text-xl d-flex align-center text-md-base text-sm-sm" href=""><img
+                            class="mr-1" src="images/icon-undo.svg" alt="">上一篇：街頭潮人訪問 1</a></li>
+                <li><a class="text-xl d-flex align-center text-sm-sm flex-row-reverse text-md-base flex-sm-row"
+                        href=""><img class="ml-base ml-sm-0 mr-sm-1" src="images/icon-redo.svg" alt="">下一篇：街頭潮人訪問 2</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="tag mb-sm-9">
+            <div class="tag__title d-flex align-center">
+                <img class="mr-1" src="images/icon-tag.svg" alt="tag">
+                <h4 class="text-primary font-roboto font-bold text-md-xl">TAGS</h4>
+            </div>
+            <ul class="tag__list d-flex flex-wrap">
+                <li><a class="font-roboto text-primary text-2xl font-bold text-md-base  mr-2 mr-md-2 mr-sm-1"
+                        href="">#special</a></li>
+                <li><a class="font-roboto text-primary text-2xl font-bold text-md-base  mr-2 mr-md-2 mr-sm-1"
+                        href="">#sale</a>
+                </li>
+                <li><a class="font-roboto text-primary text-2xl font-bold text-md-base  mr-2 mr-md-2 mr-sm-1"
+                        href="">#new_item</a></li>
+                <li><a class="font-roboto text-primary text-2xl font-bold text-md-base  mr-2 mr-md-2 mr-sm-1"
+                        href="">#interview</a></li>
+                <li><a class="font-roboto text-primary text-2xl font-bold text-md-base  mr-2 mr-md-2 mr-sm-1"
+                        href="">#trivia</a></li>
+                <li><a class="font-roboto text-primary text-2xl font-bold text-md-base  mr-2 mr-md-2 mr-sm-1"
+                        href="">#trivia</a></li>
+                <li><a class="font-roboto text-primary text-2xl font-bold text-md-base  mr-2 mr-md-2 mr-sm-1"
+                        href="">#event</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

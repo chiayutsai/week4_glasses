@@ -1,0 +1,20 @@
+@mixin size($width,$height:$width) {
+    width: $width;
+    height: $height;
+}
+@mixin before($width,$height){
+    &::before {
+        content:'';
+        width: $width;
+        height: $height;
+        display: inline-block;
+        
+        @content;
+    }
+}
+@mixin link-hover{ 
+    transition: all 0.5s;
+    &:hover{
+      @content;
+    } 
+  } 

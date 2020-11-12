@@ -1,0 +1,143 @@
+.banner{
+    background: url(../images/banner.png) no-repeat center center;
+    background-size: cover;
+    height: 840px;
+    span{
+        display: block;
+        color:$secondary-color;
+    }
+    @include phone-576{
+        height: 394px;
+    }
+}
+.service {
+    .container {
+    @include phone-576{
+        padding-bottom: 52px;
+    }
+}
+}
+.service__list{
+    li{
+        width: 20%;
+        @include pc-1024{
+            width: 40%;
+        }
+        @include pad-768{
+            width: 35%;
+        }
+        @include phone-576{
+            width: 70%;
+        }
+    }
+    img{
+        @include size(100px);
+        margin-bottom: 40px;
+        @include pc-1024{
+            @include size(80px);
+            margin-bottom: 16px;
+        }
+    }
+    
+}
+.series_list{
+    img{
+        width: 60%;
+        @include pc-1024{
+            width: 55%;
+        }
+        @include phone-576{
+            width: 100%;
+        }
+    }
+}
+
+.series__item{
+    h3{
+        @include phone-576{
+            position: absolute;
+            color:#fff;
+        }
+        @include before(48px,48px){
+            background:url(../images/icon-diamond.svg) no-repeat center;
+            background-size: contain;
+            margin-right: 8px;
+            vertical-align:bottom;
+            @include pc-1024{
+                @include size(32px)
+            }
+            @include phone-576{
+                background:url(../images/icon-diamond-white.svg) no-repeat center;
+            background-size: contain;
+            }
+        }
+    }
+    &:nth-child(2){
+        h3{
+            @include before(48px,48px){
+                background:url(../images/icon-sun.svg) no-repeat center;
+                background-size: contain;
+                @include pc-1024{
+                    @include size(32px)
+                }
+                @include phone-576{
+                    background:url(../images/icon-sun-white.svg) no-repeat center;
+                background-size: contain;
+                }
+            } 
+        }
+    }
+    &:nth-child(3){
+        h3{
+            @include before(48px,48px){
+                background:url(../images/icon-thunder.svg) no-repeat center;
+                background-size: contain;
+                @include pc-1024{
+                    @include size(32px)
+                }
+                @include phone-576{
+                    background:url(../images/icon-thunder-white.svg) no-repeat center;
+                background-size: contain;
+                }
+            } 
+        }
+    }
+    
+}
+.design{
+    background: url(../images/bg.png) no-repeat center;
+    background-size: cover;
+}
+.design__item{
+    width: 50%;
+    position: relative;
+    a{
+       @include before(100%,100%){
+           position: absolute;
+           left: 0;
+           top: 0;
+           background-color: rgba(255,255,255,0.5);
+         transition:all 0.5s;
+       }
+       &:hover{
+           &::before{
+            background-color: rgba(255,255,255,0); 
+           }
+       }
+    }
+     @include phone-576{
+         width: 100%;
+     }  
+   h3{
+       font-size: 72px;
+       position: absolute;
+       @include pc-1024{
+        font-size: 48px;
+    }
+       @include pad-768{
+           font-size: 32px;
+       }
+   }
+  
+}
+

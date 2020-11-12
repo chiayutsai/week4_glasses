@@ -1,0 +1,32 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.page__item{
+    border:1px solid #000;
+    border-right: 0px;
+    &:last-child{
+        border-right: 1px solid #000;
+        background-color: #F2F2F2;
+    }
+}
+.page__link{
+    font-size: 18px;
+    padding: 10px 14px;
+    font-family: $en-font-family;
+    @include link-hover{
+        background-color: #ddd;
+    }
+    @include phone-576{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+  
+}
+.page__link--active{
+    background-color: #000;
+    color:#fff;
+    @include link-hover{
+        background-color: #000;
+    }
+}
