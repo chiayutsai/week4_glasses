@@ -1,10 +1,39 @@
----
-title: 常見問題
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>常見問題</title>
+  <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+  <div class="nav bg-dark d-flex d-flex-between-center flex-sm-column">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo">
+      </a>
+    </div>
+
+    <ul class="navbar d-flex flex-sm-wrap w-sm-100">
+      <li class="w-sm-50">
+        <a href="series_optical.html">系列鏡框</a>
+      </li>
+      <li class="w-sm-50">
+        <a href="location.html">門市據點</a>
+      </li>
+      <li class="w-sm-50">
+        <a href="blog.html">部落格</a>
+      </li>
+      <li class="w-sm-50">
+        <a href="qa.html">常見問題</a>
+      </li>
+    </ul>
+  </div>
+
+  
 
 <div class="banner__inner mb-9 mb-md-6 mb-sm-5">
     <div class="container auto-height d-flex align-end">
@@ -44,3 +73,42 @@ current: index
         </li>
     </ul>
 </div>
+
+  <div class="footer bg-dark">
+    <div class="container">
+      <div class="footer__infro mb-3 mb-sm-3">
+        <div class="footer__nav d-flex d-flex-between-center">
+          <ul class="footer__list d-flex">
+            <li class="mr-6 mr-md-5"><a href="index.html">首頁</a></li>
+            <li class="mr-6 mr-md-5"><a href="series_optical.html">系列鏡框</a></li>
+            <li class="mr-6 mr-md-5"><a href="location.html">門市據點</a></li>
+            <li class="mr-6 mr-md-5"><a href="blog.html">部落格</a></li>
+            <li><a href="qa.html">常見問題</a></li>
+          </ul>
+          <ul class="share__btn d-flex">
+            <li class="mr-4 mr-md-3"><a href=""><img src="images/icon-fb.svg" alt="fb"></a></li>
+            <li class="mr-4 mr-md-3"><a href=""><img src="images/icon-ig.svg" alt="ig"></a></li>
+            <li><a href=""><img src="images/icon-line.svg" alt="line"></a></li>
+          </ul>
+        </div>
+        <a class="text-4xl font-roboto text-md-xl text-sm-base mb-2 mb-md-1" href="tel:+0800-000-000">
+          <img src="images/icon-phone.png" alt="phone">0800-000-000</a>
+        <a class="text-4xl font-roboto text-md-xl text-sm-base mb-2 mb-md-3 " href="mailto:glasses@business.com"><img
+            src="images/icon-mail.svg" alt="mail">glasses@business.com</a>
+      </div>
+      <div class="copyright d-flex d-flex-between-center flex-sm-column align-sm-start">
+        <div class="copyright__infro d-flex align-center mb-sm-1">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+          <p class="text-white font-roboto text-sm-sm">Copyright © 2020 Glasses.All rights reserved.</p>
+        </div>
+        <ul class="privacy__list d-flex flex-sm-column ">
+          <li class="mb-sm-1"><a class="text-sm" href="">隱私權政策</a></li>
+          <li><a class="text-sm" href="">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
